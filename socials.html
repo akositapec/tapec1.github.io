@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #141E30, #243B55);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+        .card {
+            background: #222;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            text-align: center;
+            width: 260px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid white;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .card h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 25px;
+            background: #ff6347;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background: #d43f2e;
+            transform: scale(1.07);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #3498db;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+            background: #217dbb;
+            transform: scale(1.07);
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>My Social Media Accounts</header>
+
+<div class="container">
+    <div class="card">
+        <img src="C:\Users\User\Downloads\My Website\website\fb.jpg" alt="Facebook">
+        <h3>Facebook</h3>
+        <p>Stay connected with me on Facebook!</p>
+        <a href="https://www.facebook.com/JoerosTapec147/" target="_blank" class="button">Visit</a>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\User\Downloads\My Website\website\youtube.png" alt="YouTube">
+        <h3>YouTube</h3>
+        <p> Subscribe!</p>
+        <a href="https://youtube.com/@titenggale6559?feature=shared" target="_blank" class="button">Visit</a>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\User\Downloads\My Website\website\insta.png" alt="Instagram">
+        <h3>Instagram</h3>
+        <p>See my latest photos and stories.</p>
+        <a href="https://www.instagram.com/_tapec/" target="_blank" class="button">Visit</a>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\User\Downloads\My Website\website\tiktok.png" alt="TikTok">
+        <h3>TikTok</h3>
+        <p>Follow me on TikTok!</p>
+        <a href="https://www.tiktok.com/@akositapec" target="_blank" class="button">Visit</a>
+    </div>
+</div>
+
+<a href="index.html" class="back-button">Back to Homepage</a>
+
+</body>
+</html>

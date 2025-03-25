@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Hours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #0a0a0a;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        header {
+            background-color: #111;
+            padding: 50px;
+            margin-bottom: 40px;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card {
+            background: linear-gradient(135deg, #ffcc00, #ff6347);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 3px solid white;
+        }
+        .card h3 {
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .card p {
+            color: #eee;
+            font-size: 18px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #3498db;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+            background: #217dbb;
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+
+<header>A few of my favorite games</header>
+
+<!-- Games Section -->
+<h2 class="category">Games</h2>
+
+<div class="container">
+    <div class="card">
+        <img src="rdr2.png" alt="RDR2">
+        <h3>Red Dead Redemption 2</h3>
+        <p>Hours Played: 250+</p>
+        <p>A stunning open-world game set in the Wild West, following Arthur Morgan and the Van der Linde gang.</p>
+    </div>
+
+    <div class="card">
+        <img src="gtav.png" alt="GTA V">
+        <h3>Grand Theft Auto V</h3>
+        <p>Hours Played: 327</p>
+        <p>An action-packed game set in Los Santos, featuring three protagonists and a vast open world.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <img src="l4d2.png" alt="Left 4 Dead">
+        <h3>Left 4 Dead</h3>
+        <p>Hours Played: 100+</p>
+        <p>A cooperative zombie survival shooter where teamwork is essential to survive waves of infected.</p>
+    </div>
+
+    <div class="card">
+        <img src="pz.png" alt="Project Zomboid">
+        <h3>Project Zomboid</h3>
+        <p>Hours Played: 149.8</p>
+        <p>A hardcore zombie survival game focusing on realism, resource management, and survival strategies.</p>
+    </div>
+</div>
+
+<a href="index.html" class="back-button">Back to Homepage</a>
+
+</body>
+</html>
